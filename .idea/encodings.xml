@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/admin-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/goods-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/middleware-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oss-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weixin-service" charset="UTF-8" />
+  </component>
+</project>

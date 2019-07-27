@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin-service" />
+        <module name="client" />
+        <module name="common" />
+        <module name="comonService" />
+        <module name="datamodel" />
+        <module name="goods-service" />
+        <module name="interface" />
+        <module name="manager" />
+        <module name="middleware-service" />
+        <module name="order-service" />
+        <module name="store-service" />
+        <module name="weixin-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="commonconfig" target="1.5" />
+      <module name="comonservice" target="1.5" />
+      <module name="oss-service" target="1.8" />
+      <module name="springconfig" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-service" options="-parameters" />
+      <module name="client" options="-parameters" />
+      <module name="goods-service" options="-parameters" />
+      <module name="manager" options="-parameters" />
+      <module name="middleware-service" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="oss-service" options="-parameters" />
+      <module name="store-service" options="-parameters" />
+      <module name="weixin-service" options="-parameters" />
+    </option>
+  </component>
+</project>
