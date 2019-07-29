@@ -1,4 +1,14 @@
 spring:
+  dubbo:
+    application:            #应用配置，用于配置当前应用信息，不管该应用是提供者还是消费者。
+      name: admin-service
+    registry:                 #注册中心配置，用于配置连接注册中心相关信息。
+      address: zookeeper://127.0.0.1:2181
+    protocol:     #协议配置，用于配置提供服务的协议信息，协议由提供方指定，消费方被动接受。
+      name: dubbo
+      port: 20880
+    scan: com.ouyang.adminservice.service  #服务暴露与发现消费所在的package
+
   datasource:
     url: jdbc:mysql://localhost:3306/dubbo?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
     username: root
@@ -25,19 +35,3 @@ server:
   servlet:
     context-path: /admin
   port: 8010
-
-
-#dubbo����
-dubbo:
-  application:
-    name: admin-service
-  registry:
-    address: zookeeper://119.23.187.31:2181
-    protocol: zookeeper
-  protocol:
-    name: dubbo
-    port: 20880
-  scan:
-    base-packages: com.ouyang.admin
-  monitor:
-    protocol: registry

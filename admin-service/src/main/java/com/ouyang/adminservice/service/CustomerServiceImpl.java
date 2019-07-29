@@ -1,12 +1,13 @@
 package com.ouyang.adminservice.service;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ouyang.admin.CustomerService;
 import com.ouyang.adminservice.cache.CustomerCache;
 import com.ouyang.adminservice.dao.CustomerMapper;
 import com.ouyang.entity.admin.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 /**
  * @author oy
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
  * @date 2019/7/27
  */
 @Service
+@Component
 public class CustomerServiceImpl extends ServiceImpl<CustomerMapper, Customer> implements CustomerService {
 
     @Autowired
