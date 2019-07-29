@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * @description
  * @date 2019/7/27
  */
-@Service
+@Service(interfaceClass = CustomerService.class)
 @Component
 public class CustomerServiceImpl extends ServiceImpl<CustomerMapper, Customer> implements CustomerService {
 
